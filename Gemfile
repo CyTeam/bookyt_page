@@ -1,39 +1,108 @@
-source 'https://rubygems.org'
+# Settings
+# ========
+source 'http://rubygems.org'
 
-gem 'rails', '3.2.1'
+# Rails
+# =====
+gem 'rails', "~> 3.2.0"
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+# Database
 gem 'sqlite3'
-
-gem 'json'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  gem 'sass-rails'
+  gem 'sprockets'
+  # gem 'coffee-rails', "~> 3.1.0.rc"
   gem 'therubyracer'
-
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier'
+  gem 'compass'
 end
 
+# Development
+# ===========
+group :development do
+  # RDoc
+  gem 'rdoc'
+
+  # Haml generators
+  gem 'haml-rails'
+  gem 'hpricot'
+  gem 'ruby_parser'
+
+  # Capistrano
+  gem 'capones_recipes'
+
+  # Debugger
+  gem 'ruby-debug'
+end
+
+group :test, :development do
+  # Framework
+  gem 'rspec-rails'
+
+  # Integration
+  # gem 'cucumber-rails'
+  # gem 'cucumber'
+
+  # Matchers/Helpers
+  gem 'shoulda'
+
+  # Fixtures
+  gem "factory_girl_rails"
+
+  # Mocking
+  # gem 'mocha'
+
+  # Browser
+  gem 'capybara'
+
+  # Autotest
+  gem 'autotest'
+  gem 'autotest-rails'
+  gem 'ZenTest', '< 4.6.0' # Keep it working with gems < 1.8
+
+  # Code coverage
+  gem 'rcov', :platforms => :ruby_18
+  gem 'simplecov', :require => false, :platforms => :ruby_19
+
+  gem 'spork'
+  gem 'database_cleaner'
+  gem 'rspec-instafail'
+end
+
+# Standard helpers
+# ================
 gem 'jquery-rails'
+gem 'json'
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'haml'
 
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
+# Navigation
+gem 'simple-navigation'
 
-# Use unicorn as the web server
-# gem 'unicorn'
+# Styling
+gem 'twitter-bootstrap-rails'
+gem 'formtastic-bootstrap'
+gem 'bootstrap-will_paginate'
 
-# Deploy with Capistrano
-# gem 'capistrano'
+# Form framework
+gem 'formtastic'
 
-# To use debugger
-# gem 'ruby-debug'
+# CRUD
+gem 'will_paginate'
+gem 'inherited_resources'
+gem 'has_scope'
+gem 'i18n_rails_helpers'
+gem 'responders'
+
+# Access Control
+#gem 'devise'
+#gem 'cancan'
+
+# Date/Time handling
+gem 'validates_timeliness'
+
+# Locale setting
+gem 'routing-filter'
