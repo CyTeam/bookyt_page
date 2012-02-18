@@ -15,5 +15,6 @@
 */
 
 // Content
-.container
-  min-height: 700px
+.container {
+  min-height: 700px;
+}
