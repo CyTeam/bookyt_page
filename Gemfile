@@ -16,7 +16,7 @@ group :assets do
   gem 'sprockets'
   # gem 'coffee-rails', "~> 3.1.0.rc"
   gem 'therubyracer'
-  gem 'uglifier'
+#  gem 'uglifier'
   gem 'compass'
 end
 
