@@ -13,3 +13,7 @@
  *= require formtastic-bootstrap
  *= require_tree .
 */
+
+// Content
+.container
+  min-height: 700px
