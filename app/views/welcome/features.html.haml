@@ -9,13 +9,19 @@
       %li.active=link_to "Finanzbuchaltung", "#fibu"
       %li= link_to "Debitoren", "#debit"
       %li= link_to "Kreditoren", "#credit"
+      %li= link_to "Lohnbuchhaltung", "#salary"
+      %li= link_to "Zeiterfassung", "#time_tracking"
+      %li= link_to "Weitere Funktionen", "#more"
 
+.row
+  .span12
+    .page-header
+      %h1#fibu Finanzbuchhaltung
 .row
   .span3
     = link_to "http://bookyt.demo.cyt.ch/tenants/1/balance_sheet", :target => 'bookyt_demo', :class => 'thumbnail' do
       = image_tag 'fibu.png'
   .span9
-    %h2#fibu Finanzbuchhaltung
     %p
       Mit unserer Finanzbuchhaltung behalten Sie den Überblick über den Geschäftsgang.
     %p
@@ -23,12 +29,33 @@
       Rechnungs-, Zahlungs-, aber auch Aktivierungs- oder Abschreibungsbuchungen sind bequem mit den entsprechenden Subjekten verlinkt.
 
 .row
+  .span12
+    .page-header
+      %h1#debit
+        Debitoren
+        %small Verdientes erhalten
+.row
+  .span9
+    %p
+      Als Firma stellt man gerne Rechnungen, das Erstellen und Verwalten können wir Ihnen erleichtern.
+    %p
+      Neben den Grundfunktionen wie mehreren Positionen und individuellem Briefkopf bietet unsere Debitorenlösung effiziente Lösungen für die meisten Bedürfnisse.
+      Der automatische Zahlungsableich per VESR ist z.B. ideal für hohe Volumina, PDF-Rechnungen mit hübschem Einzahlungsschein perfekt für Ihr Online-Business.
   .span3
     = link_to "http://bookyt.demo.cyt.ch/debit_invoices", :target => 'bookyt_demo', :class => 'thumbnail' do
       = image_tag 'fibu.png'
-  .span9
-    %h2#debit Debitoren
 
+.row
+  .span12
+    .page-header
+      %h1#credit
+        Kreditoren
+        %small Ausgaben im Griff
+.row
+  .span3
+    = link_to "http://bookyt.demo.cyt.ch/credit_invoices", :target => 'bookyt_demo', :class => 'thumbnail' do
+      = image_tag 'fibu.png'
+  .span9
     %p
       Als Firma stellt man gerne Rechnungen, das Erstellen und Verwalten können wir Ihnen erleichtern.
     %p
@@ -36,30 +63,75 @@
       Der automatische Zahlungsableich per VESR ist z.B. ideal für hohe Volumina, PDF-Rechnungen mit hübschem Einzahlungsschein perfekt für Ihr Online-Business.
 
 .row
-  .span3
-    = link_to "http://bookyt.demo.cyt.ch/credit_invoices", :target => 'bookyt_demo', :class => 'thumbnail' do
-      = image_tag 'fibu.png'
+  .span12
+    .page-header
+      %h1#salary
+        Lohnbuchhaltung
+        %small 
+.row
   .span9
-    %h2#credit Kreditoren
+    %p
+      Als Firma stellt man gerne Rechnungen, das Erstellen und Verwalten können wir Ihnen erleichtern.
+    %p
+      Neben den Grundfunktionen wie mehreren Positionen und individuellem Briefkopf bietet unsere Debitorenlösung effiziente Lösungen für die meisten Bedürfnisse.
+      Der automatische Zahlungsableich per VESR ist z.B. ideal für hohe Volumina, PDF-Rechnungen mit hübschem Einzahlungsschein perfekt für Ihr Online-Business.
+  .span3
+    = link_to "http://bookyt.demo.cyt.ch/debit_invoices", :target => 'bookyt_demo', :class => 'thumbnail' do
+      = image_tag 'fibu.png'
 
+.row
+  .span12
+    .page-header
+      %h1#time_tracking
+        Zeiterfassung
+        %small 
+.row
+  .span3
+    = link_to "http://bookyt.demo.cyt.ch/debit_invoices", :target => 'bookyt_demo', :class => 'thumbnail' do
+      = image_tag 'time_tracking.png'
+  .span9
     %p
       Als Firma stellt man gerne Rechnungen, das Erstellen und Verwalten können wir Ihnen erleichtern.
     %p
       Neben den Grundfunktionen wie mehreren Positionen und individuellem Briefkopf bietet unsere Debitorenlösung effiziente Lösungen für die meisten Bedürfnisse.
       Der automatische Zahlungsableich per VESR ist z.B. ideal für hohe Volumina, PDF-Rechnungen mit hübschem Einzahlungsschein perfekt für Ihr Online-Business.
 
-.page-header
-  %h1 Lohn
+.row
+  .span12
+    .page-header
+      %h1#more
+        Weitere Funktionen
+        %small
+          Helfer im Alltag
+.row
+  .span4
+    %h3 Einfach finden
+    %p
+      In der Titelleiste finden Sie zu jedem Zeitpunkt ein Suchfeld. Damit kann in allen relevanten Objekten nach beliebigen Feldern gesucht werden.
 
-%p
-  Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.
+  .span4
+    %h3 Effizient buchen
+    %p
+      Für wiederkehrende Buchungen gibt es die Funktionen "Buchung kopieren" und eine frei konfigurierbare Buchungsvorlagen.
 
-.page-header
-  %h1 Projekt- und Zeiterfassung
-%p
-  Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.
+  .span4
+    %h3 Individuel einsteigen
+    %p
+      Wie bei jeder Webseite kann jeder Benutzer selber Bookmarks für die wichtigsten Seiten und Funktionen anlegen.
 
-.page-header
-  %h1 Datei-Verwaltung
-%p
-  Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.
+.row
+  .span4
+    %h3 Fokusiert ablegen
+    %p
+      Wichtigen Geschäft-Objekten und Prozessen wie Kunden, Rechnungen oder Konten können Sie soviele Dokumente anhängen wie Sie möchten.
+
+  .span4
+    %h3 Ruhig schlafen
+    %p
+      All Ihre Daten werden in Schweizer Rechenzentrem verarbeitet und werden professionell geschützt. Wenn ihr Computer ein Problem hat, nehmen sie einen
+      anderen und arbeiten einfach weiter.
+      
+  .span4
+    %h3 Schön kommunizieren
+    %p
+      Für Rechnungen, Lohnabrechnungen usw. können Sie individuelle Vorlagen hochladen. Denn diese Dokumente repräsentiren Ihre Firma gegen aussen.

@@ -28,14 +28,15 @@
         .container
           %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
             %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
           %a.brand{:href => "#"}Bookyt
           .container.nav-collapse
             %ul.nav
               %li= link_to "Übersicht", root_path
-              %li= link_to "Features", "/features"
-              %li= link_to "Referenzen", "/references"
+              %li= link_to "Tour", "/features"
+              %li= link_to "Demo", "http://bookyt.demo.cyt.ch"
+            %ul.nav.pull-right
+              %li= link_to "Unternehmen", "http://cyt.ch"
+              %li= link_to "Entwickler", "https://github.com/huerlisi/bookyt"
 
     .container
       = yield
