@@ -18,3 +18,9 @@
 .container {
   min-height: 700px;
 }
+
+@media print {
+  .navbar-fixed-top {
+    display: none;
+  }
+}
