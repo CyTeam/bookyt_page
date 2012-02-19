@@ -44,7 +44,8 @@
       Neben den Grundfunktionen wie mehreren Positionen und individuellem Briefkopf bietet unsere Debitorenlösung effiziente Lösungen für die meisten Bedürfnisse.
       Der automatische Zahlungsableich per VESR ist z.B. ideal für hohe Volumina, PDF-Rechnungen mit ansprechendem Einzahlungsschein perfekt für Ihr Online-Business.
   .span3
-    %p
+    = link_to "http://bookyt.demo.cyt.ch/debit_invoices?by_state=all", :target => 'bookyt_demo', :class => 'thumbnail' do
+      = image_tag 'debit_invoices.png'
 
 .row
   .span12
@@ -54,7 +55,8 @@
         %small kontrolliert Ihre Ausgaben
 .row
   .span3
-    %p
+    = link_to "http://bookyt.demo.cyt.ch/credit_invoices/new", :target => 'bookyt_demo', :class => 'thumbnail' do
+      = image_tag 'credit_invoices.png'
   .span9
     %p
       Ordnung und Kontrolle sind wesentliche Elemente um die Ausgaben im Griff zu halten.
@@ -78,7 +80,8 @@
       wiederkehrende Arbeit auf das Notwendige reduziert. Im einfachsten Fall ist eine Lohnabrechnung mit wenigen Klicks gedruckt. Mit unseren Zusammenfassungen
       wird auch das Ausfüllen der Lohnmeldeformulare am Jahresende massiv einfacher.
   .span3
-    %p
+    = link_to "http://bookyt.demo.cyt.ch/salary_booking_templates", :target => 'bookyt_demo', :class => 'thumbnail' do
+      = image_tag 'salary_booking_templates.png'
 
 .row
   .span12
@@ -88,7 +91,8 @@
         %small vereinfacht den Stundenrapport
 .row
   .span3
-    %p
+    = link_to "http://bookyt.demo.cyt.ch/projects", :target => 'bookyt_demo', :class => 'thumbnail' do
+      = image_tag 'timesheet.png'
   .span9
     %p
       Sowohl für Mitarbeiter im Stundenlohn als auch für die Rechnungsstellung ist eine einfache und effiziente Erfassung geleisteter Arbeit unabdingbar.
