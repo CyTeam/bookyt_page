@@ -12,15 +12,9 @@
  *= require twitter/bootstrap
  *= require formtastic-bootstrap
  *= require_tree .
+ *= require print
 */
 
 // Content
 .container {
-  min-height: 700px;
-}
-
-@media print {
-  .navbar-fixed-top {
-    display: none;
-  }
 }
