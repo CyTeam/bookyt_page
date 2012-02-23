@@ -31,7 +31,7 @@
             %span.icon-bar
           %a.brand{:href => root_path}
             = image_tag("logo.png", :size => "30x30", :alt => "Logo", :class => "icon-logo")
-            Bookyt
+            = t('application.title')
           .container.nav-collapse
             %ul.nav
               %li= link_to "Funktionen", "/overview"
@@ -48,7 +48,10 @@
   %footer.footer
     .container
       %p
-        Bookyt ist ein Produkt der <a href="http://cyt.ch" target="_blank">CyT GmbH</a>.
+        = t('application.title')
+        ist ein Produkt der
+        = link_to "CyT GmbH", "http://cyt.ch", :target => "_blank"
+
   /
     Le javascript
     \==================================================
