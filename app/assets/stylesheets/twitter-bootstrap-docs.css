@@ -34,6 +34,20 @@
 /* Specific jumbotrons
 ------------------------- */
 /* supporting docs pages */
+
+.navbar .brand {
+  margin: 0;
+  padding: 5px 8px 0 0;
+}
+
+.icon-logo {
+  height: 25px;
+  width: 25px;
+  background-position: 25px 25px;
+  opacity: 0.7;
+  vertical-align: bottom;
+}
+
 .subhead {
   padding-bottom: 0;
   margin-bottom: 9px;
@@ -105,7 +119,7 @@ border-radius: px px 6px 6px !important;
 .subnav .nav > .active > a,
 .subnav .nav > .active > a:hover {
   padding-left: 13px;
-  color: #777;
+  color: #0088CC;
   background-color: #e9e9e9;
   border-right-color: #ddd;
   border-left: 0;
