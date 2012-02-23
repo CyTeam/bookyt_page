@@ -38,13 +38,13 @@
 .navbar .brand {
   margin: 0;
   padding: 5px 8px 0 0;
+  opacity: 0.7;
 }
 
 .icon-logo {
   height: 25px;
   width: 25px;
   background-position: 25px 25px;
-  opacity: 0.7;
   vertical-align: bottom;
 }
 
@@ -66,6 +66,8 @@
   max-width: 980px;
   margin: 0 auto;
   display: block;
+  background: #fff;
+  padding: 20px 0px;
 }
 .navbar-fixed-top, .navbar-inner, .navbar {
 -moz-border-radius-bottomright: 6px !important;
@@ -88,8 +90,18 @@ border-radius: px px 6px 6px !important;
   background: linear-gradient(top,  #898989 0%,#757575 50%,#5b5b5b 51%,#000000 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#898989', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
+.navbar .nav > li > a:hover{
+  background: #771616;
+  text-shadow: 0 -1px 0 #490000;
+  opacity: 0.7;
+}
 .navbar .nav > li > a {
-  color: #e6e6e6;
+  color: #FFF;
+  opacity: 0.7;
+}
+
+body {
+  background: #F7F7F7;
 }
 
 /* Subnav */
