@@ -34,6 +34,20 @@
 /* Specific jumbotrons
 ------------------------- */
 /* supporting docs pages */
+
+.navbar .brand {
+  margin: 0;
+  padding: 5px 8px 0 0;
+}
+
+.icon-logo {
+  height: 25px;
+  width: 25px;
+  background-position: 25px 25px;
+  opacity: 0.7;
+  vertical-align: bottom;
+}
+
 .subhead {
   padding-bottom: 0;
   margin-bottom: 9px;
