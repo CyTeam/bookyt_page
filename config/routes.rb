@@ -1,6 +1,6 @@
 BookytPage::Application.routes.draw do
-  root :to => 'welcome#index'
-  match ':action', :controller => :welcome
+  root :to => 'cydoc#index'
+  match ':action', :controller => :cydoc
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
