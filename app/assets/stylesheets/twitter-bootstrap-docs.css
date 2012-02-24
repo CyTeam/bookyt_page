@@ -8,9 +8,7 @@
 
 /* Jumbotrons
 -------------------------------------------------- */
-.jumbotron {
-  position: relative;
-}
+
 .jumbotron h1 {
   margin-bottom: 9px;
   font-size: 81px;
@@ -76,14 +74,15 @@
 }
 
 .navbar-background {
-  background: rgb(186,186,186); /* Old browsers */
-  background: -moz-linear-gradient(top,  rgba(186,186,186,1) 0%, rgba(142,142,142,1) 50%, rgba(56,56,56,1) 51%, rgba(119,119,119,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(186,186,186,1)), color-stop(50%,rgba(142,142,142,1)), color-stop(51%,rgba(56,56,56,1)), color-stop(100%,rgba(119,119,119,1))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(186,186,186,1) 0%,rgba(142,142,142,1) 50%,rgba(56,56,56,1) 51%,rgba(119,119,119,1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(186,186,186,1) 0%,rgba(142,142,142,1) 50%,rgba(56,56,56,1) 51%,rgba(119,119,119,1) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(186,186,186,1) 0%,rgba(142,142,142,1) 50%,rgba(56,56,56,1) 51%,rgba(119,119,119,1) 100%); /* IE10+ */
-  background: linear-gradient(top,  rgba(186,186,186,1) 0%,rgba(142,142,142,1) 50%,rgba(56,56,56,1) 51%,rgba(119,119,119,1) 100%); /* W3C */
+  background: #bababa; /* Old browsers */
+  background: -moz-linear-gradient(top,  #bababa 0%, #8e8e8e 50%, #383838 51%, #777777 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bababa), color-stop(50%,#8e8e8e), color-stop(51%,#383838), color-stop(100%,#777777)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #bababa 0%,#8e8e8e 50%,#383838 51%,#777777 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #bababa 0%,#8e8e8e 50%,#383838 51%,#777777 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #bababa 0%,#8e8e8e 50%,#383838 51%,#777777 100%); /* IE10+ */
+  background: linear-gradient(top,  #bababa 0%,#8e8e8e 50%,#383838 51%,#777777 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', endColorstr='#777777',GradientType=0 ); /* IE6-9 */
+
   height: 80px;
   position: fixed;
   top: 0;
@@ -93,6 +92,7 @@
 }
 
 .navbar-inner{
+  overflow: hidden;
   margin: 0;
   padding: 0;
   position: relative;
@@ -151,7 +151,7 @@ body {
   position: relative;
   padding: 0 20px ;
   left: -20px;
-  margin: 0 auto;
+  margin: -3px auto 15px;
   background-color: #e6e6e6;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
