@@ -15,6 +15,7 @@
 //= require twitter/bootstrap
 //= require_tree .
 
+
 // Loads functions after DOM is ready
 $(document).ready( function() {
     // fix sub nav on scroll
@@ -38,6 +39,9 @@ $(document).ready( function() {
       }
     }
 });
+
+
+
 
 var ss = {
   fixAllLinks: function() {
@@ -173,3 +177,6 @@ setInterval('ss.scrollWindow('+ss_stepsize+','+desty+',"'+anchor+'")',10);
 ss.STEPS = 25;
 
 ss.addEvent(window,"load",ss.fixAllLinks);
+
+$('.content-container').hide();
+$('.content-container').fadeIn(500);
