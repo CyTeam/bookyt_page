@@ -1,0 +1,2 @@
+class BookytController < ApplicationController
+end
