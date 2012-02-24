@@ -1,0 +1,75 @@
+.container
+  .subnav
+    %ul.nav.nav-pills
+      %li.active=link_to "Bookyt", "#bookyt"
+      %li= link_to "CyDoc", "#cydoc"
+      %li= link_to "Hozr", "#hozr"
+      %li= link_to "Weiteres", "#more"
+.container
+  .ankor#bookyt
+  .row
+    .span12
+      .page-header
+        %h1
+          Bookyt
+          %small für die Finanybuchhaltung
+  .row
+    .span3
+      = link_to "http://bookyt.demo.cyt.ch/tenants/1/balance_sheet", :target => 'bookyt_demo', :class => 'thumbnail' do
+        = image_tag 'bookyt.png'
+    .span9
+      %p
+        Mit Bookyt können Sie einfach, zeit- und standortunabhängig die wichtigsten administrativen Tätigkeiten erledigen.
+        Eine moderne Benutzerführung und ausgefeilte Vorlagen erlauben Ihnen, sich auf Ihre Kernkompetenzen zu konzentrieren. 
+
+  .ankor#cydoc
+  .row
+    .span12
+      .page-header
+        %h1
+          CyDoc
+          %small kontrolliert Ihre Ausgaben
+  .row
+    .span3
+      = link_to "http://bookyt.demo.cyt.ch/cydoc_invoices/new", :target => 'bookyt_demo', :class => 'thumbnail' do
+        = image_tag 'cydoc_invoices.png'
+    .span9
+      %p
+        CyDoc ist eine für Ärzte und Therapeuten konzipierte Software für die Praxisadministration. Sie bietet sämtilche Basisfunktionen, wie Tarmed konforme Rechnungsstellung und Verwaltung von Patienteninfromationen, die eine Arztpraxis benötigt. Da CyDoc wahlweise im Internet, als auch lokal in der Praxis betrieben werden kann, können die Betriebskosten deutlich gesenkt werden. CyDoc ist "Free Open Source Software", was bedeutet, dass man keine Lizenz für das bestehende Programm kaufen muss. Lediglich die Zeit, welche explizit für Ihre Praxis aufgewendet wird, muss bezahlt werden. Dies hat den wesentlichen Vorteil, dass wir stets bestrebt sind beste Servicequalität zu liefert
+
+  .ankor#hozr
+  .row
+    .span12
+      .page-header
+        %h1
+          Hozr
+          %small ?
+  .row
+    .span9
+      %p
+        ?
+    .span3
+      = link_to "http://bookyt.demo.cyt.ch/hozr_invoices?by_state=all", :target => 'bookyt_demo', :class => 'thumbnail' do
+        = image_tag 'hozr_invoices.png'
+
+  .ankor#more
+  .row
+    .span12
+      .page-header
+        %h1
+          Weitere Angebote
+          %small
+  .row
+    .span4
+      %h3 ?
+      %p
+        ?
+
+    .span4
+      %h3 ?
+      %p
+        ?
+    .span4
+      %h3 ?
+      %p
+        ?
