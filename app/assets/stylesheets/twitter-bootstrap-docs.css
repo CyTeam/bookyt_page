@@ -131,12 +131,13 @@ html {
   text-shadow: 0 -1px 0 #000;
 }
 
-.navbar .nav > li > a:hover {
-  color: #fff;
+.navbar .nav > li > a.selected {
   opacity: 1;
-  font-size: 16px;
-  height: 100%;
-  text-shadow: 0 -1px 0 #000;
+ }
+
+
+.navbar .nav > li > a:hover {
+  opacity: 1;
  }
 
 .navbar .nav > li {
@@ -294,6 +295,9 @@ a:hover{
 }
 
 
+.right {
+  float: right; 
+}
 
 /* Marketing section of Overview
 -------------------------------------------------- */

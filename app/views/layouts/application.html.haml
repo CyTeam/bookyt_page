@@ -27,15 +27,9 @@
             = image_tag("logo.png", :size => "30x30", :alt => "Logo", :class => "icon-logo")
             = t('application.title')
           .container.nav-collapse
-            %ul.nav
-              %li= link_to "Home", "/"
-              %li= link_to "Produkte", "/products"
-              %li= link_to "Dienstleistungen", "/services"
-              %li= link_to "Team", "/team"
-              %li= link_to "Referenzen", "/references"
-            %ul.nav.pull-right
-              %li= link_to "Kontakt", "/contacts"
-              %li= link_to "Entwickler", "https://github.com/CyTeam"
+            = render_navigation(:context => :main, :renderer => BootstrapTopbarList) 
+            .pull-right
+              = render_navigation(:context => :second, :renderer => BootstrapTopbarList) 
 
   .content-container
     .container
