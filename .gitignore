@@ -16,3 +16,6 @@
 
 # Local
 config/database.yml
+
+# Settings
+config/application.yml

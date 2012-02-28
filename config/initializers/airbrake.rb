@@ -1,5 +1,5 @@
-if Object.const_defined? :Airbrake && Settings.airbrake.api_key
+if Object.const_defined?(:Airbrake) and Settings['airbrake']
   Airbrake.configure do |config|
-    config.api_key = Settings.airbrake.api_key
+    BookytPage::Application.config.api_key = Settings.airbrake.api_key
   end
 end
