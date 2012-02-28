@@ -131,6 +131,8 @@ GEM
     rack (1.4.1)
     rack-cache (1.1)
       rack (>= 0.4)
+    rack-google_analytics (1.0.2)
+      rack
     rack-ssl (1.3.2)
       rack
     rack-test (0.6.1)
@@ -190,6 +192,7 @@ GEM
       ffi (~> 1.0.9)
       multi_json (~> 1.0.4)
       rubyzip
+    settingslogic (2.0.6)
     sexp_processor (3.0.10)
     shoulda (2.11.3)
     simple-navigation (3.6.0)
@@ -246,6 +249,7 @@ DEPENDENCIES
   inherited_resources
   jquery-rails
   json
+  rack-google_analytics
   rails (~> 3.2.0)
   rcov
   rdoc
@@ -256,6 +260,7 @@ DEPENDENCIES
   ruby-debug
   ruby_parser
   sass-rails
+  settingslogic
   shoulda
   simple-navigation
   simplecov

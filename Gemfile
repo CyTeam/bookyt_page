@@ -106,3 +106,17 @@ gem 'validates_timeliness'
 
 # Locale setting
 gem 'routing-filter'
+
+# Monitoring
+# ==========
+gem 'settingslogic'
+group :production do
+  # Traffic
+  gem 'rack-google_analytics'
+
+  # Performance
+  #gem 'newrelic_rpm'
+
+  # Exceptions
+  #gem 'airbrake'
+end
