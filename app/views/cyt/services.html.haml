@@ -5,14 +5,13 @@
     %li= link_to "Support", "#support"
     %li= link_to "Hosting", "#hosting"
     %li= link_to "Infrastruktur", "#infrastructure"
-    %li= link_to "Redmine", "#redmine"
-    %li= link_to "OwnCloud", "#owncloud"
 
 .row
-  %header.jumbotron.subhead#overview
-    %h1 Dienstleistungen
-    %p.lead
-      ?
+  .span12
+    %header.jumbotron.subhead#overview
+      %h1 Dienstleistungen
+      %p.lead
+        ?
 
 .ankor#development
 .row
@@ -89,35 +88,7 @@
     %p
       ?
 
-.ankor#redmine
-.row
-  .span12
-    .page-header
-      %h1
-        Redmine
-        %small für die Projektplanung
-.row
-  .span9
-    %p
-      Basierend auf dem weit verbreiteten Online-Projektmanagement Programm Redmine, bieten wir eine individualisierte Projektplanungs-Umgebung für Ihre Bedürfnisse. Damit können Sie eine beliebige Anzahl Projekte verwalten, Benutzer erfassen und Berechtigungen verteilen. Es gibt eine integrierte Wissensdatenbank, mit der auf einfachste Weise komplexes Wissen dokumentiert werden kann. Das Kernstück von CyPlan ist jedoch die ausgeklügelte Arbeitsplanungs-Funktion. Es lassen sich verschiedene Kategorien von Aufgaben erstellen, für welche die Ressourcen wie Mitarbeiter, budgetierte und effektive Zeit koordiniert werden können. Des weiteren haben sämtliche Projekt-Mitarbeiter zugriff auf die zentrale Dateiverwaltung, was die Existenz von verschiedenen Versionen, verteilt im Unternehmen, vermeidet.
-  .span3
-    = link_to "http://bookyt.demo.cyt.ch/redmine_booking_templates", :target => 'bookyt_demo', :class => 'thumbnail' do
-      = image_tag 'redmine_booking_templates.png'
 
-.ankor#owncloud
-.row
-  .span12
-    .page-header
-      %h1
-        OwnCloud
-        %small ?
-.row
-  .span3
-    = link_to "http://bookyt.demo.cyt.ch/projects", :target => 'bookyt_demo', :class => 'thumbnail' do
-      = image_tag 'timesheet.png'
-  .span9
-    %p
-      Mit Owncloud haben Sie Ihre Daten jederzeit und überall zur Verfügung. Speichern Sie einen Brief im Büro ab und greifen später von zuhause wieder darauf zu. Machen Sie ein Foto mit Ihrem Smartphone und öffnen es an einem beliebigen Computer. Ihre Daten bleiben stets vor Fremdzugriff und Verlust geschützt. Im Gegensatz zu Online-Diensten wie google docs, dropbox werden Ihre Daten auf Server in der Schweiz gespeichert. Somit haben sie höchste Rechtssicherheit.
 
 .ankor#more
 .row
