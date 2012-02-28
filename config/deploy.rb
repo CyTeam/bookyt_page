@@ -3,6 +3,7 @@ set :application, 'bookyt_page'
 set :repository,  'git@github.com:CyTeam/bookyt_page.git'
 
 require 'capones_recipes/cookbook/rails'
+require 'capones_recipes/tasks/settings_logic'
 require 'capones_recipes/tasks/database/setup'
 
 load 'deploy/assets'
