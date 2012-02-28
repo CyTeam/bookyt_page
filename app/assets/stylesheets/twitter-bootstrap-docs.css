@@ -624,7 +624,58 @@ a:hover{
 
   /* Update subnav container */
   .subnav-fixed .nav {
-    width: 1168px; /* 2px less to account for left/right borders being removed when in fixed mode */
+    max-width: 1168px; /* 2px less to account for left/right borders being removed when in fixed mode */
   }
+
+  #back-top {
+    position: fixed;
+    bottom: 30px;
+    width: 95px;
+    height: 95px;
+    display: block;
+    margin-left: 25px;
+    margin-bottom: 7px;
+    background: #e6e6e6 no-repeat center center;
+    z-index: 2000;
+    /* rounded corners */
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+
+  #back-top:hover {
+    background: #ddd
+  }
+
+  #back-top p {
+    position: fixed;
+    bottom: -80px;
+    width: 95px;
+    height: 108px;
+    display: block;
+    margin-bottom: 7px;
+    color: #e6e6e6;
+  }
+
+  #back-top a img{
+    background: no-repeat center center;
+    margin-top: 17px;
+  }
+
+  #back-top a {
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font: 11px 100% Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #bbb;
+    /* transition */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+  }
+
 
 }

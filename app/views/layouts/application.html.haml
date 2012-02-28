@@ -30,10 +30,15 @@
             = render_navigation(:context => :main, :renderer => BootstrapTopbarList) 
             .pull-right
               = render_navigation(:context => :second, :renderer => BootstrapTopbarList) 
-
+  
   .content-container
     .container
       = yield
+  #back-top
+    %a{:href => "#top", :rel => "back to top"}
+      = image_tag("up-arrow.png", :alt => "Back to Top")      
+      %p
+        BACK TO TOP
 
   .footer_background
     .footer
