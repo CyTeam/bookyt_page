@@ -49,8 +49,9 @@ SimpleNavigation::Configuration.run do |navigation|
     #                            when the item should be highlighted, you can set a regexp which is matched
     #                            against the current URI.  You may also use a proc, or the symbol <tt>:subpath</tt>. 
     #
+      primary.dom_class = 'last'
       primary.item :contacts, 'Kontakt', "/contacts"
-      primary.item :developers, 'Entwickler', 'https://github.com/CyTeam'
+      primary.item :developers, 'Entwickler', 'https://github.com/CyTeam', :class => 'last', :link => {:class => 'last'}
     end
 
     # You can also specify a condition-proc that needs to be fullfilled to display an item.
