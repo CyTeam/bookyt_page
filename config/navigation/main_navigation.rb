@@ -52,7 +52,7 @@ SimpleNavigation::Configuration.run do |navigation|
       primary.item :products, 'Produkte', "/products"
       primary.item :services, 'Dienstleistungen', "/services"
       primary.item :references, 'Referenzen', "/references"
-      primary.item :firm, 'Über uns', "/firm"
+      primary.item :firm, 'Über uns', "/about_us"
     end
 
     # You can also specify a condition-proc that needs to be fullfilled to display an item.
