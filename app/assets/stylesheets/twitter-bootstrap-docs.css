@@ -15,10 +15,12 @@
   letter-spacing: -1px;
   line-height: 1;
 }
+
 .jumbotron p {
   margin-bottom: 18px;
   font-weight: 300;
 }
+
 .jumbotron .btn-large {
   font-size: 20px;
   font-weight: normal;
@@ -35,9 +37,15 @@
 html {
   overflow-y:scroll;
 }
+
+.last {
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+}
+
 .navbar .brand {
   margin: 0;
-  padding: 8px 8px 0 0;
+  padding: 8px 12px 0 0;
 }
 
 .icon-logo {
@@ -51,6 +59,7 @@ html {
   padding-bottom: 0;
   margin-bottom: 9px;
 }
+
 .subhead h1 {
   font-size: 54px;
 }
@@ -69,12 +78,10 @@ html {
 }
 
 .navbar, .navbar-fixed-top {
-  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   height: 60px;
-
 }
-
 
 .navbar-background {
   background: #bababa; /* Old browsers */
@@ -85,13 +92,11 @@ html {
   background: -ms-linear-gradient(top,  #bababa 0%,#8e8e8e 50%,#383838 51%,#777777 100%); /* IE10+ */
   background: linear-gradient(top,  #bababa 0%,#8e8e8e 50%,#383838 51%,#777777 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', endColorstr='#777777',GradientType=0 ); /* IE6-9 */
-
   height: 80px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 0
-
 }
 
 .navbar-inner{
@@ -117,8 +122,6 @@ html {
   z-index: 2000;
 }
 
-
-
 .navbar .nav > li > a {
   color: #fff;
   opacity: 0.7;
@@ -143,6 +146,7 @@ html {
 
 body {
   background: #FFF;
+  height: 100%;
 }
 
 /* Subnav */
@@ -164,33 +168,40 @@ body {
 .subnav .nav {
   margin-bottom: 0;
 }
+
 .subnav .nav > li > a {
   margin: 0;
   padding-top: 10px;
+  color: #afafaf;
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
 }
+
 .subnav .nav > .active > a,
 .subnav .nav > .active > a:hover {
-  color: #0088CC;
+  color: #5b5b5b;
   background-color: #e1e1e1;
   border-left: 0;
   -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.05);
      -moz-box-shadow: inset 0 3px 5px rgba(0,0,0,.05);
           box-shadow: inset 0 3px 5px rgba(0,0,0,.05);
 }
+
 .subnav .nav > .active > a .caret,
 .subnav .nav > .active > a:hover .caret {
   border-top-color: #777;
 }
+
 .subnav .nav > li:first-child > a,
 .subnav .nav > li:first-child > a:hover {
   border-left: 0;
 }
+
 .subnav .nav > li:last-child > a {
   border-right: 0;
 }
+
 .subnav .dropdown-menu {
   -webkit-border-radius: 0 0 4px 4px;
      -moz-border-radius: 0 0 4px 4px;
@@ -203,13 +214,11 @@ body {
           border-radius: 0 0 4px 4px;
 }
 
-
 /* Fixed subnav on scroll, but only for 980px and up (sorry IE!) */
 @media (min-width: 980px) {
   .subnav-fixed {
     position: fixed;
     margin: 0 auto;
-    width: 940px;
     top: 62px;
     left: 0;
     right: 0;
@@ -219,11 +228,12 @@ body {
             box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
     filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); /* IE6-9 */
   }
+
   .subnav-fixed .nav {
-    width: 980px;
     margin: 0 auto;
     padding: 0 1px;
   }
+
   .subnav .nav > li:first-child > a,
   .subnav .nav > li:first-child > a:hover {
     -webkit-border-radius: 0;
@@ -236,12 +246,11 @@ body {
   padding-top: 200px;
 }
 
-
 .right {
   float: right; 
 }
 input {
-  float:left;
+  float: left;
 }
 textarea {
   height: 140px;
@@ -259,12 +268,11 @@ textarea {
   background: linear-gradient(top,  #bababa 0%,#8e8e8e 50%,#383838 51%,#777777 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', endColorstr='#777777',GradientType=0 ); /* IE6-9 */
   color: #fff;
-  }
+}
 
 .btn:hover {
   color: #fff;
   border: none;
-
   background: #8c0707; /* Old browsers */
   background: -moz-linear-gradient(top,  #8c0707 0%, #8c2121 50%, #770000 51%, #5b0000 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8c0707), color-stop(50%,#8c2121), color-stop(51%,#770000), color-stop(100%,#5b0000)); /* Chrome,Safari4+ */
@@ -371,10 +379,12 @@ textarea {
   h2 {
     margin-top: 27px;
   }
+
   h2 small {
     display: block;
     line-height: 18px;
   }
+
   h3 {
     margin-top: 18px;
   }
@@ -385,22 +395,26 @@ textarea {
     text-align: center;
     margin-right: 0;
   }
+
   .jumbotron h1 {
     font-size: 45px;
     margin-right: 0;
   }
+
   .jumbotron p {
     margin-right: 0;
     margin-left: 0;
     font-size: 18px;
     line-height: 24px;
   }
+
   .jumbotron .btn {
     display: block;
     font-size: 18px;
     padding: 10px 14px;
     margin: 0 auto 10px;
   }
+
   /* Masthead (home page jumbotron) */
   .masthead {
     padding-top: 0;
@@ -410,6 +424,7 @@ textarea {
   .quick-links {
     margin: 40px 0 0;
   }
+
   /* hide the bullets on mobile since our horizontal space is limited */
   .quick-links .divider {
     display: none;
@@ -419,6 +434,7 @@ textarea {
   .example-sites {
     margin-left: 0;
   }
+
   .example-sites > li {
     float: none;
     display: block;
@@ -426,6 +442,7 @@ textarea {
     margin: 0 auto 18px;
     text-align: center;
   }
+
   .example-sites .thumbnail > img {
     max-width: 270px;
   }
@@ -466,21 +483,25 @@ textarea {
     position: static;
     top: auto;
     z-index: auto;
-    width: auto;
+    max-width: auto;
     height: auto;
     background: #fff; /* whole background property since we use a background-image for gradient */
     -webkit-box-shadow: none;
        -moz-box-shadow: none;
             box-shadow: none;
   }
+
   .subnav .nav > li {
     float: none;
   }
+
   .subnav .nav > li > a {
     border: 0;
   }
+
   .subnav .nav > li + li > a {
   }
+
   .subnav .nav > li:first-child > a,
   .subnav .nav > li:first-child > a:hover {
       -webkit-border-radius: 4px 4px 0 0;
@@ -492,6 +513,7 @@ textarea {
   .large-bird {
     display: none;
   }
+
   .popover-well .popover-wrapper {
     margin-left: 0;
   }
@@ -505,10 +527,10 @@ textarea {
   .footer .pull-right {
     float: none;
   }
+
   .footer p {
     margin-bottom: 9px;
   }
-
 }
 
 
@@ -518,11 +540,11 @@ textarea {
   .jumbotron h1 {
     font-size: 54px;
   }
+
   .jumbotron p {
     margin-right: 0;
     margin-left: 0;
   }
-
 }
 
 
@@ -537,7 +559,6 @@ textarea {
   .jumbotron h1 {
     font-size: 72px;
   }
-
 }
 
 
@@ -556,7 +577,6 @@ textarea {
     display: inline-block;
     margin: 5px;
   }
-
 }
 
 
