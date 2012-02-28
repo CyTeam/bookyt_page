@@ -47,7 +47,7 @@ GEM
     capistrano-ext (1.2.1)
       capistrano (>= 1.0.0)
     capistrano_colors (0.5.5)
-    capones_recipes (1.15.2)
+    capones_recipes (1.15.3)
       cap-recipes
       capistrano
       capistrano-ext
