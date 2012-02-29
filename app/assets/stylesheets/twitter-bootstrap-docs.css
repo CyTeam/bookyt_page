@@ -283,6 +283,18 @@ textarea {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c0707', endColorstr='#5b0000',GradientType=0 ); /* IE6-9 */
 }
 
+a.thumbnail:hover{
+  border-color: #ddd !important;
+  box-shadow: 0 1px 4px #ddd !important;
+
+}
+a:hover{
+  border-color: #ddd !important;
+  text-decoration: none;
+}
+
+
+
 /* Marketing section of Overview
 -------------------------------------------------- */
 .marketing .row {
