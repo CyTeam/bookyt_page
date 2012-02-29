@@ -47,60 +47,65 @@
           %ul
             %li
               %h4
-                Produkte
+                = link_to "Produkte", '/products'
             %li
-              Bookyt
+              = link_to "Bookyt", '/products#bookyt'
             %li
-              CyDoc
+              = link_to "CyDoc", '/products#cydoc'
             %li
-              Hozr
+              = link_to "Hozr", '/products#hozr'
             %li
-              Weiteres
+              = link_to "Redmine", '/products#redmine'
+            %li
+              = link_to "OwnCloud", '/products#owncloud'            
+            %li
+              = link_to "Weiteres", '/products#more'            
       
         .span2
           %ul
             %li
               %h4
-                Entwicklung
+                = link_to "Dienstleistungen", '/services'
             %li
-              Schulung
+              = link_to "Entwicklung", '/services#development'
             %li
-              Support
+              = link_to "Schulung", '/services#training'
             %li
-              Hosting
+              = link_to "Support", '/services#support'
             %li
-              Infrastruktur
+              = link_to "Hosting", '/services#hosting'
             %li
-              Redmine
-            %li
-              OwnCloud
+              = link_to "Infrastruktur", '/services#infrastructure'
 
         .span2
           %ul
             %li
               %h4
-                Referenzen
-          %ul
-            %li
-              %h4
-                Über uns
-            %li
-              Firma
-            %li
-              Team
+                = link_to "Referenzen", '/references'
         .span2
           %ul
             %li
               %h4
-                Kontakt
+                = link_to "Über uns", '/about_us'
             %li
-              Kontaktformular
+              = link_to "Firma", '/about_us#firm'
             %li
-              Standort
+              = link_to "Team", '/about_us#team'
+
+        .span2
           %ul
             %li
               %h4
-                Entwickler
+                = link_to "Kontakt", '/contacts'
+            %li
+              = link_to "Kontaktformular", '/contacts#contact'
+            %li
+              = link_to "Standort", '/contacts#place'
+        .span2      
+          %ul
+            %li
+              %h4
+                = link_to "Entwickler", 'https://github.com/CyTeam'
 
 
   /
