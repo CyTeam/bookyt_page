@@ -1,31 +1,63 @@
-.line
-  .box.last
-    .double.spacer
-      %h2
-        Kontakt
-      %p
-        Gerne kommen wir vorbei um Ihnen sämtliche Funktionen zu präsentieren.
-      %p
-        %form
-          %p
-            %input{ :placeholder => " Vorname", :style => "width: 294px" }
-            %input{ :placeholder => " Nachname", :style => "width: 294px" }
-          %p
-            %input{ :placeholder => " e-Mail", :style => "width: 594px" }
-          %p
-            %textarea{ :placeholder => " Nachricht", :style => "width: 594px; height: 120px" }
-          %p 
-            %input{ :type => "submit", :value => "Absenden" }
-    .small
-      %h2
-        Adresse
-      %p
-        CyT GmbH
-      %p
-        Dorfstrasse 17
-      %p
-        6300 Zug
-      %p
-        041 544 47 60
-      %p
-        info@cyt.ch
+.subnav
+  %ul.nav.nav-pills
+    %li= link_to "Kontaktformular", "#contact"
+    %li=link_to "Standort", '#place'
+
+.ankor#contact
+.row
+  .span12
+    .page-header
+      %h1
+        Kontaktformular
+.row
+  .span12     
+    %form
+  .span4
+    %label
+      Vorname
+    %input.span4
+  .span4
+    %label
+      Nachname
+    %input.span4
+  .span4
+    %label
+      e-Mail
+    %input.span4
+
+  .span8  
+    %label
+      Nachricht
+    %textarea.span12
+  .span12   
+    %input.btn{ :type => "submit", :value => "Absenden" }
+
+.ankor#place
+.row
+  .span12
+    .page-header
+      %h1
+        Standort
+.row
+  .span10
+    %p
+      <iframe width="770" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=dorfstrasse+17,+zug&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=54.928982,135.263672&amp;ie=UTF8&amp;hq=&amp;hnear=Dorfstrasse+17,+6300+Zug,+Switzerland&amp;t=h&amp;ll=47.167047,8.517945&amp;spn=0.005835,0.02017&amp;z=16&amp;iwloc=A&amp;output=embed"></iframe>
+  .span2
+    %h2
+      Adresse
+    %p  
+      CyT GmbH
+      %br/
+      Dorfstrasse 17
+      %br/
+      6300 Zug
+    %p  
+      Telefon 
+      %br/
+      041 544 47 60
+    %p  
+      e-Mail
+      %br/
+      info@cyt.ch
+
+
