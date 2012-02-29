@@ -32,7 +32,9 @@
 /* Specific jumbotrons
 ------------------------- */
 /* supporting docs pages */
-
+html {
+  overflow-y:scroll;
+}
 .navbar .brand {
   margin: 0;
   padding: 8px 8px 0 0;
@@ -72,6 +74,7 @@
   height: 60px;
 
 }
+
 
 .navbar-background {
   background: #bababa; /* Old browsers */
@@ -300,14 +303,52 @@ body {
 
 /* Footer
 -------------------------------------------------- */
-.footer {
-  margin-top: 45px;
-  padding: 35px 0 36px;
-  border-top: 1px solid #e5e5e5;
-}
+
 .footer p {
   margin-bottom: 0;
   color: #555;
+}
+
+.footer {
+
+  height: 100%;
+  width: 980px;
+  margin: 0 auto;
+  padding: 0;
+  background: #5b0000; /* Old browsers */
+  background: -moz-linear-gradient(top,  #5b0000 0%, #8c2121 46%, #8c0707 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5b0000), color-stop(46%,#8c2121), color-stop(100%,#8c0707)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #5b0000 0%,#8c2121 46%,#8c0707 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #5b0000 0%,#8c2121 46%,#8c0707 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #5b0000 0%,#8c2121 46%,#8c0707 100%); /* IE10+ */
+  background: linear-gradient(top,  #5b0000 0%,#8c2121 46%,#8c0707 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b0000', endColorstr='#8c0707',GradientType=0 ); /* IE6-9 */
+
+}
+.footer_background {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background: #383838; /* Old browsers */
+  background: -moz-linear-gradient(top,  #383838 1%, #777777 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#383838), color-stop(100%,#777777)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #383838 1%,#777777 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #383838 1%,#777777 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #383838 1%,#777777 100%); /* IE10+ */
+  background: linear-gradient(top,  #383838 1%,#777777 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383838', endColorstr='#777777',GradientType=0 ); /* IE6-9 */
+  s
+}
+
+.footer ul {
+  color: #fff;
+  padding: 20px;
+  list-style: none;
+  margin: 0 20px;
+}
+.footer ul li h4{
+  color: #fff;
 }
 
 /* Responsive Docs
@@ -411,6 +452,7 @@ body {
   .jumbotron .btn {
     margin-bottom: 10px;
   }
+
 
   /* Subnav */
   .subnav {
