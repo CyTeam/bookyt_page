@@ -1,0 +1,76 @@
+%header
+  %p.lead
+    Als Treuhandunternehmen sind Sie Vertrauensperson und Ansprechpartner für Ihre Kunden. Bookyt erlaubt Ihnen diese Zusammenarbeit
+    effizienter und einfacher zu machen.
+
+.ankor#reseller
+.row
+  .span12
+    .page-header
+      %h1
+        Als Wiederverkäufer
+        %small verdienen Sie an unserer Arbeit
+.row
+  .span9
+    %p
+      Kleinere Betriebe haben weder Resourcen noch Know How für die Evaluation von Unternehmenssoftware. Oft nutzen sie Word für die Fakturierung, Excel für die Kreditoren und eine Schachtel
+      für die Quittungen. Bookyt bietet eine einfache, integrale Lösung für die wichtigsten Administrativen Tätigkeiten eines KMUs.
+    %p
+      Als Ansprechpartner für alles Finanzielle sind Sie in der besten Position, Ihren Kunden die Vorteile einer modernen Lösung zu erläutern. Wenn Sie Ihre Kunden von Bookyt
+      überzeugen erhalten Sie natürlich eine anständige Provision.
+    %p
+      Gerne erarbeiten wir mit Ihnen ein attraktives Angebot.
+  .span3
+    = link_to "/features", :class => 'thumbnail' do
+      = image_tag 'credit_invoices.png'
+
+.ankor#provider
+.row
+  .span12
+    .page-header
+      %h1
+        Als Provider
+        %small verwöhnen Sie Ihre Kunden
+.row
+  .span3
+    = link_to "/overview", :class => 'thumbnail' do
+      = image_tag 'timesheet.png'
+  .span9
+    %p
+      Sie können Bookyt für Ihre Kunden betreiben. Damit können Sie Ihren Kunden eine moderne Buchhaltungssoftware anbieten, und damit die Attraktivität Ihrer
+      Dienstleistung steigern. Ob Sie diese Leistung Ihren Kunden direkt in Rechnung stellen, oder mit Minderaufwand z.B. bei Jahresabschlüssen gegenrechnen
+      bleibt Ihnen überlassen.
+    %p
+      Wenn Sie möchten können Sie den Dienst auf eigener Hardware anbieten. Oder wir betreiben Ihre Instanzen auf unserer Infrastruktur in Schweizer Rechenzentren.
+    %p
+      Gerne offerieren wir Ihnen eine auf Sie angepasste Lösung.
+
+.ankor#user
+.row
+  .span12
+    .page-header
+      %h1
+        Als Anwender
+        %small kommen Sie Ihren Kunden näher
+.row
+  .span9
+    %p
+      Für Sie als Treuhandbüro ist Bookyt interessant, da Sie damit Ihren Kunden einen zeitnahen Zugang zu seiner Buchhaltung anbieten können.
+      Auch der Dokumentenaustausch kann auf diesem Weg stattfinden. Um die Integrität der Buchhaltung sicher zu stellen, können Sie dem Kunden einen eingeschränkten Zugang gewähren.
+      So kann er z.B. das Fakturierungsmodul nutzen, aber nur Sie dürfen neue Buchungen erfassen.
+  .span3
+    = link_to "http://bookyt.demo.cyt.ch", :target => 'bookyt_demo', :class => 'thumbnail' do
+      = image_tag 'fibu.png'
+
+.row
+  .span12
+    .page-header
+      %h1
+        Als Interessent
+        %small erfahren Sie hier mehr
+.row
+  .span4= link_to "Funktionen", '/overview', :class => "btn btn-danger"
+
+  .span4= link_to "Tour", '/features', :class => "btn btn-warning"
+
+  .span4= link_to "Demo", 'http://bookyt.demo.cyt.ch', :target => 'bookyt_demo', :class => "btn btn-primary"
