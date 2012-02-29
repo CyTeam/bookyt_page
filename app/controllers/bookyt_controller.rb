@@ -1,6 +1,6 @@
 class BookytController < ApplicationController
   def kmu
-    redirect_to '/tour'
+    redirect_to '/features'
   end
 
   def treuhand
