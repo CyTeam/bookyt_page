@@ -1,32 +1,21 @@
-
-.subnav
-  %ul.nav.nav-pills
-    %li.active=link_to "Bookyt", "#bookyt"
-    %li= link_to "CyDoc", "#cydoc"
-    %li= link_to "Hozr", "#hozr"
-    %li= link_to "Redmine", "#redmine"
-    %li= link_to "OwnCloud", "#owncloud"
-    %li= link_to "Weiteres", "#more"
-
-.row
-  .span12
-    %header.jumbotron.subhead#overview
-
 .ankor#bookyt
 .row
   .span12
     .page-header
       %h1
         Bookyt
-        %small für die Finanybuchhaltung
+        %small Buchhaltung ganz einfach
 .row
   .span3
-    = link_to "http://bookyt.demo.cyt.ch/tenants/1/balance_sheet", :target => 'bookyt_demo', :class => 'thumbnail' do
+    = link_to "http://bookyt.ch", :target => '_blank', :class => 'thumbnail' do
       = image_tag 'bookyt.png'
   .span9
     %p
       Mit Bookyt können Sie einfach, zeit- und standortunabhängig die wichtigsten administrativen Tätigkeiten erledigen.
       Eine moderne Benutzerführung und ausgefeilte Vorlagen erlauben Ihnen, sich auf Ihre Kernkompetenzen zu konzentrieren. 
+    %p
+      = link_to "Ich will mehr wissen", 'http://bookyt.ch', :class => "btn"
+      = link_to "Zur Demo", 'https://bookyt-demo.cyt.ch', :class => "btn btn-primary"
 
 .ankor#cydoc
 .row
@@ -34,79 +23,14 @@
     .page-header
       %h1
         CyDoc
-        %small kontrolliert Ihre Ausgaben
+        %small Praxisadministration ganz einfach
 .row
   .span3
-    = link_to "http://bookyt.demo.cyt.ch/cydoc_invoices/new", :target => 'bookyt_demo', :class => 'thumbnail' do
-      = image_tag 'cydoc_invoices.png'
+    = link_to "http://cydoc.ch", :target => 'bookyt_demo', :class => 'thumbnail' do
+      = image_tag 'cydoc.png'
   .span9
     %p
-      CyDoc ist eine für Ärzte und Therapeuten konzipierte Software für die Praxisadministration. Sie bietet sämtilche Basisfunktionen, wie Tarmed konforme Rechnungsstellung und Verwaltung von Patienteninfromationen, die eine Arztpraxis benötigt. Da CyDoc wahlweise im Internet, als auch lokal in der Praxis betrieben werden kann, können die Betriebskosten deutlich gesenkt werden. CyDoc ist "Free Open Source Software", was bedeutet, dass man keine Lizenz für das bestehende Programm kaufen muss. Lediglich die Zeit, welche explizit für Ihre Praxis aufgewendet wird, muss bezahlt werden. Dies hat den wesentlichen Vorteil, dass wir stets bestrebt sind beste Servicequalität zu liefert
-
-.ankor#hozr
-.row
-  .span12
-    .page-header
-      %h1
-        Hozr
-        %small ?
-.row
-  .span9
+      CyDoc ist eine für Ärzte und Therapeuten konzipierte Software für die Praxisadministration. Sie bietet sämtliche Basisfunktionen, wie Tarmed konforme Rechnungsstellung und Verwaltung von Patienteninfromationen, die eine Arztpraxis benötigt. Da CyDoc wahlweise im Internet, als auch lokal in der Praxis betrieben werden kann, können die Betriebskosten deutlich gesenkt werden. CyDoc ist "Free Open Source Software", was bedeutet, dass man keine Lizenz für das bestehende Programm kaufen muss. Lediglich die Zeit, welche explizit für Ihre Praxis aufgewendet wird, muss bezahlt werden. Dies hat den wesentlichen Vorteil, dass wir stets bestrebt sind beste Servicequalität zu liefert
     %p
-      ?
-  .span3
-    = link_to "http://bookyt.demo.cyt.ch/hozr_invoices?by_state=all", :target => 'bookyt_demo', :class => 'thumbnail' do
-      = image_tag 'hozr_invoices.png'
-
-.ankor#redmine
-.row
-  .span12
-    .page-header
-      %h1
-        Redmine
-        %small für die Projektplanung
-.row
-  .span9
-    %p
-      Basierend auf dem weit verbreiteten Online-Projektmanagement Programm Redmine, bieten wir eine individualisierte Projektplanungs-Umgebung für Ihre Bedürfnisse. Damit können Sie eine beliebige Anzahl Projekte verwalten, Benutzer erfassen und Berechtigungen verteilen. Es gibt eine integrierte Wissensdatenbank, mit der auf einfachste Weise komplexes Wissen dokumentiert werden kann. Das Kernstück von CyPlan ist jedoch die ausgeklügelte Arbeitsplanungs-Funktion. Es lassen sich verschiedene Kategorien von Aufgaben erstellen, für welche die Ressourcen wie Mitarbeiter, budgetierte und effektive Zeit koordiniert werden können. Des weiteren haben sämtliche Projekt-Mitarbeiter zugriff auf die zentrale Dateiverwaltung, was die Existenz von verschiedenen Versionen, verteilt im Unternehmen, vermeidet.
-  .span3
-    = link_to "http://bookyt.demo.cyt.ch/redmine_booking_templates", :target => 'bookyt_demo', :class => 'thumbnail' do
-      = image_tag 'redmine_booking_templates.png'
-
-.ankor#owncloud
-.row
-  .span12
-    .page-header
-      %h1
-        OwnCloud
-        %small ?
-.row
-  .span3
-    = link_to "http://bookyt.demo.cyt.ch/projects", :target => 'bookyt_demo', :class => 'thumbnail' do
-      = image_tag 'timesheet.png'
-  .span9
-    %p
-      Mit Owncloud haben Sie Ihre Daten jederzeit und überall zur Verfügung. Speichern Sie einen Brief im Büro ab und greifen später von zuhause wieder darauf zu. Machen Sie ein Foto mit Ihrem Smartphone und öffnen es an einem beliebigen Computer. Ihre Daten bleiben stets vor Fremdzugriff und Verlust geschützt. Im Gegensatz zu Online-Diensten wie google docs, dropbox werden Ihre Daten auf Server in der Schweiz gespeichert. Somit haben sie höchste Rechtssicherheit.
-
-
-.ankor#more
-.row
-  .span12
-    .page-header
-      %h1
-        Weitere Angebote
-        %small
-.row
-  .span4
-    %h3 ?
-    %p
-      ?
-
-  .span4
-    %h3 ?
-    %p
-      ?
-  .span4
-    %h3 ?
-    %p
-      ?
+      = link_to "Ich will mehr wissen", 'http://cydoc.ch', :class => "btn"
+      = link_to "Zur Demo", 'https://cydoc-demo.cyt.ch', :class => "btn btn-primary"
