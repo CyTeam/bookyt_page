@@ -6,8 +6,14 @@
         %small ein kleiner Auszug...
 .row
   .span12
-    %p
-      Am liebsten machen wir unsere Kunden glücklich. Denn wir können etwas, was nicht zu ihren Kompetenzen gehört: Webseiten entwickeln.
+    #carousel.carousel
+      .carousel-inner
+        .active.item
+          = image_tag '870x500/katalog.png'
+        .item
+          = image_tag '870x500/offer_on_web.png'
+      %a.carousel-control.left{:href => "#carousel", 'data-slide' => "prev"} &lsaquo;
+      %a.carousel-control.right{:href => "#carousel", 'data-slide' => "next"} &rsaquo;
 
 %ul.thumbnails
   %li.span4
