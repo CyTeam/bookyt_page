@@ -1,5 +1,5 @@
 BookytPage::Application.routes.draw do
-  root :to => 'bookyt#index'
+  root :to => 'bookyt#coming-soon'
   match ':action', :controller => :bookyt
 
   # The priority is based upon order of creation:

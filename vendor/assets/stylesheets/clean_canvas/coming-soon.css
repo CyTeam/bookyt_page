@@ -93,7 +93,7 @@
 	width: 31.5%;
 	margin-left: 30px;
 }
-#coming_soon .email_wrapp .wrapp a.send{
+#coming_soon .email_wrapp .wrapp .btn.send{
 	text-transform: uppercase;
 	color: #fff;
 	border: 0 none;
