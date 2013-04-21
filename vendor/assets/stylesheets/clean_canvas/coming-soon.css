@@ -94,6 +94,7 @@
 	margin-left: 30px;
 }
 #coming_soon .email_wrapp .wrapp .btn.send{
+        width: 100px;
 	text-transform: uppercase;
 	color: #fff;
 	border: 0 none;
@@ -104,7 +105,6 @@
 	text-shadow: none;
 	padding: 8px 10px;
 	font-size: 14px;
-	float: right;
 	-webkit-transition: background linear .2s, box-shadow linear .2s;
 	-moz-transition: background linear .2s, box-shadow linear .2s;
 	-o-transition: background linear .2s, box-shadow linear .2s;
