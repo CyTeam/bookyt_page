@@ -1,142 +1,99 @@
-%header.jumbotron.subhead#overview
-  %h1 Bookyt hilft im Alltag
-  %p.lead
-    Administrative Tätigkeiten sind in jedem Betrieb wichtig. Aber sie sind nicht die Kernkompetenz. Bookyt unterstützt
-    Sie darin diese Arbeiten speditiv und präzise zu erledigen.
+#features.features_page
+  .container
+    .feature_wrapper.option1
+      .row.feature
+        .span3
+          = link_to "http://bookyt.demo.cyt.ch/tenants/1/balance_sheet", :target => 'bookyt_demo', :class => 'thumbnail' do
+            = image_tag 'fibu.png'
+        .span9.info
+          %h3
+            Die Finanzbuchhaltung
+            %small verschafft Ihnen den Überblick
+          %p
+            Mit unserer Finanzbuchhaltung behalten Sie den Überblick über den Geschäftsgang.
+          %p
+            Dynamische Bilanz- und Erfolgsrechnungen bieten Ihnen die nötige Übersicht. In den Konten sehen sie die detailierten Buchungen.
+            Rechnungs-, Zahlungs-, aber auch Aktivierungs- oder Abschreibungsbuchungen sind bequem mit den entsprechenden Subjekten verlinkt.
 
-  .subnav
-    %ul.nav.nav-pills
-      %li.active=link_to "Finanzbuchaltung", "#fibu"
-      %li= link_to "Debitoren", "#debit"
-      %li= link_to "Kreditoren", "#credit"
-      %li= link_to "Lohnbuchhaltung", "#salary"
-      %li= link_to "Zeiterfassung", "#time_tracking"
-      %li= link_to "Weitere Funktionen", "#more"
+      .row.feature.ss
+        .span9.info
+          %h3
+            Die Debitorenverwaltung
+            %small sichert Ihr Einkommen
+          %p
+            Als Firma stellt man gerne Rechnungen, das Erstellen und Verwalten können wir Ihnen erleichtern.
+          %p
+            Neben den Grundfunktionen wie mehreren Positionen und individuellem Briefkopf bietet unsere Debitorenlösung effiziente Lösungen für die meisten Bedürfnisse.
+          %p
+            Der automatische Zahlungsableich per VESR ist z.B. ideal für hohe Volumina, PDF-Rechnungen mit ansprechendem Einzahlungsschein perfekt für Ihr Online-Business.
+        .span3
+          = link_to "http://bookyt.demo.cyt.ch/debit_invoices?by_state=all", :target => 'bookyt_demo', :class => 'thumbnail' do
+            = image_tag 'debit_invoices.png'
 
-.ankor#fibu
-.row
-  .span12
-    .page-header
-      %h1
-        Die Finanzbuchhaltung
-        %small verschafft Ihnen den Überblick
-.row
-  .span3
-    = link_to "http://bookyt.demo.cyt.ch/tenants/1/balance_sheet", :target => 'bookyt_demo', :class => 'thumbnail' do
-      = image_tag 'fibu.png'
-  .span9
-    %p
-      Mit unserer Finanzbuchhaltung behalten Sie den Überblick über den Geschäftsgang.
-    %p
-      Dynamische Bilanz- und Erfolgsrechnungen bieten Ihnen die nötige Übersicht. In den Konten sehen sie die detailierten Buchungen.
-      Rechnungs-, Zahlungs-, aber auch Aktivierungs- oder Abschreibungsbuchungen sind bequem mit den entsprechenden Subjekten verlinkt.
+      .row.feature.ss
+        .span3
+          = link_to "http://bookyt.demo.cyt.ch/credit_invoices/new", :target => 'bookyt_demo', :class => 'thumbnail' do
+            = image_tag 'credit_invoices.png'
+        .span9.info
+          %h3
+            Die Kreditorenverwaltung
+            %small kontrolliert Ihre Ausgaben
+          %p
+            Ordnung und Kontrolle sind wesentliche Elemente um die Ausgaben im Griff zu halten.
+          %p
+            Bereits bei der Erfassung einer Rechnung können sie Ausgaben dem entsprechenden Aufwandskonto zuweisen.
+            Damit erleichtern Sie die Arbeit Ihres Treuhänders und sparen Geld. Mit Bookyt haben sehen Sie auf einen Blick, welche Rechnungen noch ausstehend sind und
+            können Ihre Liquidität besser planen.
 
-.ankor#debit
-.row
-  .span12
-    .page-header
-      %h1
-        Die Debitorenverwaltung
-        %small sichert Ihr Einkommen
-.row
-  .span9
-    %p
-      Als Firma stellt man gerne Rechnungen, das Erstellen und Verwalten können wir Ihnen erleichtern.
-    %p
-      Neben den Grundfunktionen wie mehreren Positionen und individuellem Briefkopf bietet unsere Debitorenlösung effiziente Lösungen für die meisten Bedürfnisse.
-      Der automatische Zahlungsableich per VESR ist z.B. ideal für hohe Volumina, PDF-Rechnungen mit ansprechendem Einzahlungsschein perfekt für Ihr Online-Business.
-  .span3
-    = link_to "http://bookyt.demo.cyt.ch/debit_invoices?by_state=all", :target => 'bookyt_demo', :class => 'thumbnail' do
-      = image_tag 'debit_invoices.png'
-.ankor#credit
-.row
-  .span12
-    .page-header
-      %h1
-        Die Kreditorenverwaltung
-        %small kontrolliert Ihre Ausgaben
-.row
-  .span3
-    = link_to "http://bookyt.demo.cyt.ch/credit_invoices/new", :target => 'bookyt_demo', :class => 'thumbnail' do
-      = image_tag 'credit_invoices.png'
-  .span9
-    %p
-      Ordnung und Kontrolle sind wesentliche Elemente um die Ausgaben im Griff zu halten.
-    %p
-      Bereits bei der Erfassung einer Rechnung können sie Ausgaben dem entsprechenden Aufwandskonto zuweisen.
-      Damit erleichtern Sie die Arbeit Ihres Treuhänders und sparen Geld. Mit Bookyt haben sehen Sie auf einen Blick, welche Rechnungen noch ausstehend sind und
-      können Ihre Liquidität besser planen.
-.ankor#salary
-.row
-  .span12
-    .page-header
-      %h1
-        Die Lohnbuchhaltung
-        %small entlastet Ihre Administration
-.row
-  .span9
-    %p
-      Jeden Monat müssen Löhne ausbezahlt und Abrechnungen verschickt werden. Wir automatisieren wo immer möglich.
-    %p
-      Ob Festanstellung oder Stundenlohn, die Abrechnung am Ende jeden Monats ist aufwändig. Mit klar strukturierten Vorlagen und dynamischen Formularen wird die
-      wiederkehrende Arbeit auf das Notwendige reduziert. Im einfachsten Fall ist eine Lohnabrechnung mit wenigen Klicks gedruckt. Mit unseren Zusammenfassungen
-      wird auch das Ausfüllen der Lohnmeldeformulare am Jahresende massiv einfacher.
-  .span3
-    = link_to "http://bookyt.demo.cyt.ch/salary_booking_templates", :target => 'bookyt_demo', :class => 'thumbnail' do
-      = image_tag 'salary_booking_templates.png'
-.ankor#time_tracking
-.row
-  .span12
-    .page-header
-      %h1
-        Die Zeiterfassung
-        %small vereinfacht den Stundenrapport
-.row
-  .span3
-    = link_to "http://bookyt.demo.cyt.ch/projects", :target => 'bookyt_demo', :class => 'thumbnail' do
-      = image_tag 'timesheet.png'
-  .span9
-    %p
-      Sowohl für Mitarbeiter im Stundenlohn als auch für die Rechnungsstellung ist eine einfache und effiziente Erfassung geleisteter Arbeit unabdingbar.
-    %p
-      Für jeden Mitarbeiter und jedes Projekt ist auf einen Blick sichtbar wieviel Zeit aufgewendet worden ist. Für die Eingabe sind verschiedene Formulare
-      verfügbar, so kann z.B. in einem Schritt die Arbeitszeit aller Mitarbeiter erfasst werden.
-.ankor#more
-.row
-  .span12
-    .page-header
-      %h1
-        Weitere Funktionen
-        %small vereinfachen den Alltag
-.row
-  .span4
-    %h3 Einfach finden
-    %p
-      In der Titelleiste finden Sie zu jedem Zeitpunkt ein Suchfeld. Damit kann in allen relevanten Objekten nach beliebigen Feldern gesucht werden.
+    .feature_wrapper.option2
+      .row
+        .span6.feature
+          .box
+            = image_tag 'img/features-ico4.png', :class => 'one'
+          .text
+            %h6 Einfach finden
+            %p
+              In der Titelleiste finden Sie zu jedem Zeitpunkt ein Suchfeld. Damit kann in allen relevanten Objekten nach beliebigen Feldern gesucht werden.
 
-  .span4
-    %h3 Effizient buchen
-    %p
-      Für wiederkehrende Buchungen gibt es die Funktionen "Buchung kopieren" und eine frei konfigurierbare Buchungsvorlagen.
+        .span6.feature
+          .box
+            = image_tag 'img/features-ico4.png', :class => 'one'
+          .text
+            %h6 Effizient buchen
+            %p
+              Für wiederkehrende Buchungen gibt es die Funktionen "Buchung kopieren" und eine frei konfigurierbare Buchungsvorlagen.
 
-  .span4
-    %h3 Individuell einsteigen
-    %p
-      Wie bei jeder Webseite kann jeder Benutzer selber Bookmarks für die wichtigsten Seiten und Funktionen anlegen.
+      .row
+        .span6.feature
+          .box
+            = image_tag 'img/features-ico4.png', :class => 'one'
+          .text
+            %h6 Individuell einsteigen
+            %p
+              Wie bei jeder Webseite kann jeder Benutzer selber Bookmarks für die wichtigsten Seiten und Funktionen anlegen.
 
-.row
-  .span4
-    %h3 Fokusiert ablegen
-    %p
-      Wichtigen Geschäft-Objekten und Prozessen wie Kunden, Rechnungen oder Konten können Sie soviele Dokumente anhängen wie Sie möchten.
+        .span6.feature
+          .box
+            = image_tag 'img/features-ico4.png', :class => 'one'
+          .text
+            %h3 Fokusiert ablegen
+            %p
+              Wichtigen Geschäft-Objekten und Prozessen wie Kunden, Rechnungen oder Konten können Sie soviele Dokumente anhängen wie Sie möchten.
 
-  .span4
-    %h3 Ruhig schlafen
-    %p
-      All Ihre Daten werden in Schweizer Rechenzentren verarbeitet und werden professionell geschützt. Wenn ihr Computer ein Problem hat, nehmen sie einen
-      anderen und arbeiten einfach weiter.
-      
-  .span4
-    %h3 Schön kommunizieren
-    %p
-      Für Rechnungen, Lohnabrechnungen usw. können Sie individuelle Vorlagen hochladen. Denn diese Dokumente repräsentiren Ihre Firma gegen aussen.
+      .row
+        .span6.feature
+          .box
+            = image_tag 'img/features-ico4.png', :class => 'one'
+          .text
+            %h6 Ruhig schlafen
+            %p
+              All Ihre Daten werden in Schweizer Rechenzentren verarbeitet und werden professionell geschützt. Wenn ihr Computer ein Problem hat, nehmen sie einen
+              anderen und arbeiten einfach weiter.
+
+        .span6.feature
+          .box
+            = image_tag 'img/features-ico4.png', :class => 'one'
+          .text
+            %h6 Schön kommunizieren
+            %p
+              Für Rechnungen, Lohnabrechnungen usw. können Sie individuelle Vorlagen hochladen. Denn diese Dokumente repräsentiren Ihre Firma gegen aussen.

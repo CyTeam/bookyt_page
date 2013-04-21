@@ -1,0 +1,20 @@
+#coming_soon
+  .head
+    .container
+      .span6.text
+        %h4 Buchhaltung einfach online!
+        %p
+          Leider müsst Ihr Euch noch eine weile mit der konventionellen Buchhaltung quälen :-(
+        %p
+          Wenn Ihr uns eure E-Mail gebt werden wir Euch informieren sobald wir ready sind!
+      .span6.count
+  .email_wrapp
+    .container
+      .span11.wrapp
+        %p
+          %strong Ich möchte informiert werden:
+        = form_tag 'subscribe', :remote => true do
+          %input{:name => 'email', :placeholder => "Email address...", :type => "text"}/
+          %button.btn.send ok
+
+= render :template => 'bookyt/features'

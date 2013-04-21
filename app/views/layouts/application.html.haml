@@ -10,42 +10,81 @@
       = javascript_include_tag "http://html5shim.googlecode.com/svn/trunk/html5.js"
     / Le styles
     = stylesheet_link_tag "application", :media => "all"
-    :css
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-        padding-bottom: 40px;
-      }
+    / = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic'
     = favicon_link_tag
 
-  %body{'data-spy' => "scroll", 'data-target' => ".subnav", 'data-offset' => "50"}
-    .navbar-background
-    .navbar.navbar-fixed-top
+  %body.pull_top
+    .navbar.navbar-inverse.transparent.navbar-fixed-top
       .navbar-inner
         .container
           %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
             %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
           %a.brand{:href => root_path}
-            = image_tag("logo.png", :size => "30x30", :alt => "Logo", :class => "icon-logo")
-            = t('application.title')
+            %strong= t('application.title')
           .container.nav-collapse
-            %ul.nav
-              %li= link_to "Funktionen", "/overview"
-              %li= link_to "Tour", "/features"
-              %li= link_to "Demo", "http://bookyt.demo.cyt.ch", :target => 'bookyt_demo'
             %ul.nav.pull-right
+              %li= link_to "Demo", "http://bookyt.demo.cyt.ch", :target => 'bookyt_demo'
               %li= link_to "Unternehmen", "http://cyt.ch"
               %li= link_to "Entwickler", "https://github.com/huerlisi/bookyt"
 
-  .content-container
-    .container
-      = yield
-  
-  %footer.footer
-    .container
-      %p
-        = t('application.title')
-        ist ein Produkt der
-        = link_to "CyT GmbH", "http://cyt.ch", :target => "_blank"
+  = yield
+
+/ starts footer
+%footer#footer
+  .container
+    .row.sections
+      .span4.recent_posts
+        %h3.footer_header
+          Recent Posts
+        .post
+          %a{:href => ""}
+            %img.img-circle{:src => "img/recent_post1.png"}/
+          .date
+            = Date.today
+          %a.title{:href => "http://www.facebook.com/pages/Bookyt/263195190422722?hc_location=timeline"}
+            %p
+              Wir sind am Startup Weekend in Zürich und arbeiten hart an der Weiterentwicklung von Bookyt! Äusserst spannendes Feedback und anregende Atmosphäre:-)
+
+            %p
+              Stay tuned, bald gibt es News...
+      .span4.testimonials
+        %h3.footer_header
+          Testimonials
+        .wrapper
+          .quote
+            %span “
+            Wir nutzen Bookyt seit unserer Gründung uns sind super happy.
+            %span
+          .author
+            %img{:src => "img/user-display.png"}/
+            .name Daniel König
+            .info
+              = link_to "edustra gmbh", "http://edustra.ch"
+      .span4.contact
+        %h3.footer_header
+          Contact
+        %form{:action => "#", :method => "post"}
+          %input{:placeholder => "Your name", :type => "text"}/
+          %input{:placeholder => "Your email", :type => "text"}/
+          %textarea{:placeholder => "Message", :rows => "3"}
+          %input{:type => "submit", :value => "Send"}/
+    .row.credits
+      .span12
+        .row.social
+          .span12
+            %a.facebook{:href => "http://www.facebook.com/pages/Bookyt/263195190422722"}
+              %span.socialicons.ico1
+              %span.socialicons_h.ico1h
+            %a.twitter{:href => "https://twitter.com/CyT_GmbH"}
+              %span.socialicons.ico2
+              %span.socialicons_h.ico2h
+        .row.copyright
+          .span12
+            © 2013
+            = link_to "CyT GmbH", "http://cyt.ch", :target => "_blank"
+            \. All rights reserved.
 
   /
     Le javascript

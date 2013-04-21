@@ -1,3 +1,24 @@
+%section#feature_slider
+  /
+    Each slide is composed by <img> and .info
+    \- .info's position is customized with css in index.css
+    \- each <img> parallax effect is declared by the following params inside its class:
+
+    \- example: class="asset left-472 sp600 t120 z3"
+    \- left-472 means left: -472px from the center
+    \- sp600 is speed transition
+    \- t120 is top to 120px
+    \- z3 is z-index to 3
+    \- Note: Maintain this order of params
+
+    \- For the backgrounds, you can combine from the bgs folder :D
+  %article#showcasing.slide{:style => "background: url('img/backgrounds/landscape.png') repeat-x top center;"}
+    %img.asset.left-480.sp600.t260.z1{:src => image_path('fibu.png')}/
+    %img.asset.left-210.sp600.t213.z2{:src => image_path('debit_invoices.png')}/
+    %img.asset.left60.sp600.t260.z1{:src => image_path('salary_booking_templates.png')}/
+    .info
+      %h2 Buchhaltung ganz einfach
+
 .hero-unit
   %h1 Buchhaltung ganz einfach
   %p
@@ -14,7 +35,7 @@
     %p
       Elektronische Unterstützung bei Rechnungsstellung, Lohnbuchhaltung und Kontaktverwaltung sind heute ein Muss. Wir bieten eine
       Lösung, welche auf die Bedürfnisse Schweizer KMUs zugeschnitten ist.
-                                 
+
   .span4
     %h2 Für Treuhand
     %p
@@ -30,3 +51,4 @@
   .span4= link_to "Weitere Informationen", '/treuhand', :class => "btn btn-warning"
 
   .span4= link_to "Weiter zur Demo", 'http://bookyt.demo.cyt.ch', :target => 'bookyt_demo', :class => "btn btn-primary"
+

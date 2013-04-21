@@ -35,7 +35,7 @@ group :development do
   gem 'capones_recipes'
 
   # Debugger
-  gem 'ruby-debug'
+  # gem 'ruby-debug'
 end
 
 group :test, :development do
@@ -86,6 +86,7 @@ gem 'simple-navigation'
 gem 'twitter-bootstrap-rails'
 gem 'formtastic-bootstrap'
 gem 'bootstrap-will_paginate'
+gem 'less-rails'
 
 # Form framework
 gem 'formtastic'

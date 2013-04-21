@@ -13,6 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require clean_canvas/theme
+//= require clean_canvas/index-slider
 //= require_tree .
 
 

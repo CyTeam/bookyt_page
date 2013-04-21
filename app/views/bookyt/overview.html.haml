@@ -1,13 +1,26 @@
-.page-header
-  %h1
-    Bookyt
-    %small hilft Ihnen...
-
-.row
-  .span4
-    %h3 Kontakte pflegen
-    %p
-      Im Zentrum ihrer Dienstleistung steht der Kunde. Darum ist auch bei uns die Kontaktverwaltung das Herzstück.
+#features.features_page
+  .container
+    .feature_wrapper.option2
+      .section_header
+        %h3
+          Bookyt
+          %span hilft Ihnen...
+      .row
+        .span6.feature
+          .box
+            = image_tag 'img/features-ico5.png', :class => 'one'
+          .text
+            %h6 Kontakte pflegen
+            %p
+              Im Zentrum ihrer Dienstleistung steht der Kunde. Darum ist auch bei uns die Kontaktverwaltung das Herzstück.
+      .row
+        .span6.feature.right
+          .box
+            = image_tag 'img/features-ico5.png', :class => 'one'
+          .text
+            %h6 Debitoren verwalten
+            %p
+              Als Firma stellt man gerne Rechnungen, das Erstellen und Verwalten können wir Ihnen erleichtern.
 
   .span4
     %h3 Debitoren verwalten
@@ -41,7 +54,7 @@
     %p
       All Ihre Daten werden in Schweizer Rechenzentren verarbeitet und werden professionell geschützt. Wenn ihr Computer ein Problem hat, nehmen sie einen
       anderen und arbeiten einfach weiter.
-      
+
   .span4
     %h3 Schön kommunizieren
     %p
