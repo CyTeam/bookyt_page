@@ -84,7 +84,6 @@ gem 'simple-navigation'
 
 # Styling
 gem 'twitter-bootstrap-rails'
-gem 'formtastic-bootstrap'
 gem 'bootstrap-will_paginate'
 gem 'less-rails'
 

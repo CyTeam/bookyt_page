@@ -10,7 +10,6 @@
  *
  *= require_self
  *= require bootstrap_and_overrides
- *= require formtastic-bootstrap
  *= require clean_canvas/theme
  *= require clean_canvas/index
  *= require clean_canvas/features
