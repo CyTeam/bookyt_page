@@ -41,6 +41,7 @@ end
 
 group :test, :development do
   # Framework
+  gem 'minitest'
   gem 'rspec-rails'
 
   # Integration
@@ -48,7 +49,7 @@ group :test, :development do
   # gem 'cucumber'
 
   # Matchers/Helpers
-  gem 'shoulda'
+  # gem 'shoulda'
 
   # Fixtures
   gem "factory_girl_rails"
