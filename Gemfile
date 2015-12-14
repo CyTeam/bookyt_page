@@ -8,7 +8,7 @@ gem 'rails', "~> 3.2.0"
 gem 'unicorn'
 
 # Database
-gem 'mysql2'
+gem 'mysql2', '~> 0.3.10'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -41,8 +41,9 @@ end
 
 group :test, :development do
   # Framework
+  gem 'test-unit'
   gem 'minitest'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 2.99.0'
 
   # Integration
   # gem 'cucumber-rails'
@@ -85,7 +86,7 @@ gem 'haml'
 gem 'simple-navigation'
 
 # Styling
-gem 'twitter-bootstrap-rails'
+gem 'twitter-bootstrap-rails', '~> 2.2.6'
 gem 'bootstrap-will_paginate'
 gem 'less-rails'
 
